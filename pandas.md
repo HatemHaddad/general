@@ -125,3 +125,8 @@ print(dept_counts_sorted)
 dept_props_sorted = store_depts['department'].value_counts(sort=True, normalize=True)
 print(dept_props_sorted)
 ```
+## Calculations with .groupby()
+The .groupby() method makes life much easier. In this exercise, you'll perform the same calculations as last time, except you'll use the .groupby() method. You'll also perform calculations on data grouped by two variables to see if sales differ by store type depending on if it's a holiday week or not.
+
+## Multiple grouped summaries
+Earlier in this chapter, you saw that the .agg() method is useful to compute multiple statistics on multiple variables. It also works with grouped data. NumPy, which is imported as np, has many different summary statistics functions, including: np.min, np.max, np.mean, and np.median.
