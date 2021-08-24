@@ -56,9 +56,22 @@ for lab, row in brics.iterrows() :
 ```
 
 # Add column (1)
-In the video, Hugo showed you how to add the length of the country names of the brics DataFrame in a new column:
 
 ```python
 for lab, row in brics.iterrows() :
     brics.loc[lab, "name_length"] = len(row["country"])
+```
+
+# Add column (2)
+Using iterrows() to iterate over every observation of a Pandas DataFrame is easy to understand, but not very efficient. On every iteration, you're creating a new Pandas Series.
+
+If you want to add a column to a DataFrame by calling a function on another column, the iterrows() method in combination with a for loop is not the preferred way to go. Instead, you'll want to use apply().
+
+Compare the iterrows() version with the apply() version to get the same result in the brics DataFrame:
+
+```python
+for lab, row in brics.iterrows() :
+    brics.loc[lab, "name_length"] = len(row["country"])
+
+brics["name_length"] = brics["country"].apply(len)
 ```
