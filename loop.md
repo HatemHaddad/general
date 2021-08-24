@@ -39,4 +39,10 @@ If you're dealing with a 2D Numpy array, it's more complicated. A 2D array is bu
 for x in np.nditer(my_array) :
     ...
 ```
+# Loop over DataFrame (1)
+Iterating over a Pandas DataFrame is typically done with the **iterrows()** method. Used in a for loop, every observation is iterated over and on every iteration the row label and actual row contents are available:
 
+```python
+for lab, row in brics.iterrows() :
+    ...
+```
