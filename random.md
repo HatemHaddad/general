@@ -1,5 +1,5 @@
 # Random float
-Randomness has many uses in science, art, statistics, cryptography, gaming, gambling, and other fields. You're going to use randomness to simulate a game.
+Randomness has many uses in science, art, statistics, cryptography, gaming, gambling, and other fields. 
 
 All the functionality you need is contained in the `random` package, a sub-package of `numpy`. 
 
