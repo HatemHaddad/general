@@ -68,3 +68,5 @@ dogs[condition]
 You aren't stuck with just the data you are given. Instead, you can add new columns to a DataFrame. This has many names, such as transforming, mutating, and feature engineering.
 
 You can create new columns from scratch, but it is also common to derive them from other columns, for example, by adding columns together or by changing their units.
+
+# 2 Aggregating DataFrames
