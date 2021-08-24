@@ -32,3 +32,12 @@ In cases where rows have the same value (this is common if you sort on a categor
 * **multiple columns**	df.sort_values(["col1", "col2"],ascending=[True,False])
 
 By combining **.sort_values() with .head()**, you can answer questions in the form, "What are the top cases where…?".
+
+# Subsetting columns
+When working with data, you may not need all of the variables in your dataset. Square brackets ([]) can be used to select only the columns that matter to you in an order that makes sense to you. To select only "col_a" of the DataFrame df, use
+
+df["col_a"]
+
+To select "col_a" and "col_b" of df, use
+
+df[["col_a", "col_b"]]
