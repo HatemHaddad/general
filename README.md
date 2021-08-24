@@ -16,7 +16,7 @@ for x,y in enumerate(areas) :
 ```
 
 # Loop over Dictionary
-In Python 3, you need the items() method to loop over a dictionary:
+In Python 3, you need the **items()** method to loop over a dictionary:
 ```python
 world = { "afghanistan":30.55, 
           "albania":2.77,
