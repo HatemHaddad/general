@@ -4,15 +4,15 @@
 * Dictionary
 * DataFrame
 
-# Loop over list
-```python
-areas = [11.25, 18.0, 20.0, 10.75, 9.50]
-```
+# Liat
+Using a for loop to iterate over a list only gives you access to every list element in each run, one after the other. If you also want to access the index information, so where the list element you're iterating over is located, you can use **enumerate()**.
 
-# Change for loop to use enumerate() and update print()
+As an example, have a look at how the for loop from the video was converted:
+
 ```python
-for x,y in enumerate(areas) :
-  print("room {}: {}".format(x,y))
+fam = [1.73, 1.68, 1.71, 1.89]
+for index, height in enumerate(fam) :
+    print("person " + str(index) + ": " + str(height))
 ```
 
 # Loop over Dictionary
