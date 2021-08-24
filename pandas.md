@@ -80,3 +80,48 @@ print(df['col1'].mean())
 # Print the median of weekly_sales
 print(df['col2'].median())
 ```
+
+# Efficient summaries
+While pandas and NumPy have tons of functions, sometimes, you may need a different function to summarize your data.
+
+The **`.agg()`** method allows you to apply your own custom functions to a DataFrame, as well as apply functions to more than one column of a DataFrame at once, making your aggregations super-efficient. For example,
+```python
+df['column'].agg(function)
+
+# A custom IQR function
+def iqr(column):
+    return column.quantile(0.75) - column.quantile(0.25)
+    
+# Print IQR of the temperature_c column
+print(sales['temperature_c'].agg(iqr))
+```
+
+## Cumulative statistics
+Cumulative statistics can also be helpful in tracking summary statistics over time. In this exercise, you'll calculate the cumulative sum and cumulative max of a department's weekly sales, which will allow you to identify what the total sales were so far as well as what the highest weekly sales were so far.
+
+## Counting categorical variables
+Counting is a great way to get an overview of your data and to spot curiosities that you might not notice otherwise. In this exercise, you'll count the number of each type of store and the number of each department number using the DataFrames you created in the previous exercise:
+```python
+# Drop duplicate store/type combinations
+store_types = sales.drop_duplicates(subset=["store", "type"])
+
+# Drop duplicate store/department combinations
+store_depts = sales.drop_duplicates(subset=["store", "department"])
+```
+```python
+# Count the number of stores of each type
+store_counts = store_types['type'].value_counts()
+print(store_counts)
+
+# Get the proportion of stores of each type
+store_props = store_types['type'].value_counts(normalize=True)
+print(store_props)
+
+# Count the number of each department number and sort
+dept_counts_sorted = store_depts['department'].value_counts(sort=True)
+print(dept_counts_sorted)
+
+# Get the proportion of departments of each number and sort
+dept_props_sorted = store_depts['department'].value_counts(sort=True, normalize=True)
+print(dept_props_sorted)
+```
