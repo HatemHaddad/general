@@ -27,7 +27,7 @@ Finding interesting bits of data in a DataFrame is often easier if you change th
 
 In cases where rows have the same value (this is common if you sort on a categorical variable), you may wish to break the ties by sorting on another column. You can sort on multiple columns in this way by passing a list of column names.
 
-#Sort on 
+# Sort on 
 * **one column**	df.sort_values("col")
 * **multiple columns**	df.sort_values(["col1", "col2"])
 
