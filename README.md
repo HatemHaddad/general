@@ -9,5 +9,5 @@
 
 # Change for loop to use enumerate() and update print()
 > for x,y in enumerate(areas) :
->    print("room {}: {}".format(x,y))'
+>    print("room {}: {}".format(x,y))
 
