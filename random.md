@@ -18,7 +18,7 @@ np.random.seed(123)
 print(np.random.rand())
 ```
 # Roll the dice
-Use randint(), also a function of the random package, to generate integers randomly. The following call generates the integer 4, 5, 6 or 7 randomly. 8 is not included.
+Use **randint()**, also a function of the random package, to generate integers randomly. The following call generates the integer 4, 5, 6 or 7 randomly. 8 is not included.
 
 ```python
 import numpy as np
