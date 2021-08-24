@@ -1,9 +1,9 @@
 
 # For loop
-* List - enumerate(list)
-* Dictionary - .items()
-* Numpy array - np.nditer(array)
-* DataFrame - .iterrows()
+* List - **enumerate(list)**
+* Dictionary - **.items()**
+* Numpy array - **np.nditer(array)**
+* DataFrame - **.iterrows()**
 
 # Loop over List
 Using a for loop to iterate over a list only gives you access to every list element in each run, one after the other. If you also want to access the index information, so where the list element you're iterating over is located, you can use **enumerate()**.
