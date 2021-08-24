@@ -1,5 +1,9 @@
 # general
-# For loop for a list
+# For loop
+* List
+* Dictionary
+* DataFrame
+
 # list
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
