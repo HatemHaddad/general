@@ -70,3 +70,13 @@ You aren't stuck with just the data you are given. Instead, you can add new colu
 You can create new columns from scratch, but it is also common to derive them from other columns, for example, by adding columns together or by changing their units.
 
 # 2 Aggregating DataFrames
+
+## Mean and median
+Summary statistics are exactly what they sound like - they summarize many numbers in one statistic. For example, mean, median, minimum, maximum, and standard deviation are summary statistics. Calculating summary statistics allows you to get a better sense of your data, even if there's a lot of it.
+```python
+# Print the mean of weekly_sales
+print(sales['weekly_sales'].mean())
+
+# Print the median of weekly_sales
+print(sales['weekly_sales'].median())
+```
