@@ -1,4 +1,4 @@
-# general
+
 # For loop
 * List
 * Dictionary
