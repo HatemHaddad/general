@@ -93,3 +93,54 @@ pd.read_csv("file.csv",usecols=['col'],squeeze=True)
 # We used squeeze parameter to save it as Series
 ```
 # The .head() and .tail() Method
+
+```python
+df.head()
+df.tail()
+# This is a new dataframe that shows the first and last n rows
+```
+# Python Built-In Functions
+
+The normal python functions work well with Series object
+
+```python
+len(pokemon) # display the length of the series
+
+type(pokemon) # displays the type of an object
+
+dir(pokemon)# shows all the available attributes and methods
+
+sorted(pokemon) # sorted list of a series
+
+list(pokemon) # a list from a series
+
+dict(pokemon) # a dictionar from a series. Then index will be the key
+
+max(pokemon)
+
+min(pokemon)
+```
+# More Series Attributes
+
+```python
+
+pokemon.is_unique # shows if the values are unique
+
+pokemon.ndim # number of dimension. For series it is 1
+
+pokemon.shape 
+
+pokemon.size # tolal number of items. It counts null items
+
+pokemon.name # shows the header name.
+
+pokemon.name ='Pokemon Master' # changes the name
+```
+
+# The .sort_values() Method
+
+```python
+pokemon.sort_values(ascending=False)
+```
+
+
