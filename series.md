@@ -143,4 +143,15 @@ pokemon.name ='Pokemon Master' # changes the name
 pokemon.sort_values(ascending=False)
 ```
 
+# The inplace parameter
+
+```python
+pokemon.sort_values(ascending= False,inplace=True) # keeps the change permanent
+```
+# The.sort_index() Method
+```python
+pokemon.sort_index(ascending=False,inplace=True)
+```
+
+# Python's in keyword
 
