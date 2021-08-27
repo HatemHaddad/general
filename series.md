@@ -88,5 +88,8 @@ pd.Series(fruits, index = weekdays) # mix - first argument sequentially and othe
 # Import Series withn the .read_csv() Method
 
 ```python
-pd.read_csv("file.csv",usecols=['col'],squeeze=True) # pandas import a file as a DataFrame even if it is one colums. We used squeeze parameter to save it as Series
+pd.read_csv("file.csv",usecols=['col'],squeeze=True) 
+# pandas import a file as a DataFrame even if it is one colums. 
+# We used squeeze parameter to save it as Series
 ```
+# The .head() and .tail() Method
