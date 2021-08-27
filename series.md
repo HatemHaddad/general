@@ -71,10 +71,10 @@ Methods have something called Parametrs and Parameters take values called Argume
 # Easy is the Argument that we are proving to the Difficulty Parameter
 # Parameter is the name of the option and the Argument is the choice that we choose for that option
 
-fruits = ['Apple', 'Orange', 'Plum', 'Grapes', 'Blueberry','Watermelon]
+fruits = ['Apple', 'Orange', 'Plum', 'Grapes', 'Blueberry','Watermelon']
 weekdays =['Monday','Tuesday','Wednesday','Thursday','Friday','Monday']
 
-pd.Series(# click here ctrl+tab and we will get the documentation)
+pd.Series(# click here shift+tab and we will get the documentation)
 
 # We will see the Parameters and = sign with the values. These values are the default argument that pandas use as default
 
@@ -83,3 +83,10 @@ pd.Series(data = fruits, index = weekdays) # explicit ordering as it figures the
 pd.Series(fruits, index = weekdays) # mix - first argument sequentially and other argument expicit
 
 # index in series should not be unique
+```
+
+# Import Series withn the .read_csv() Method
+
+```python
+pd.read_csv("file.csv",usecols=['col'],squeeze=True) # pandas import a file as a DataFrame even if it is one colums. We used squeeze parameter to save it as Series
+```
