@@ -55,3 +55,19 @@ s.sum()
 s.product()
 s.mean()
 ```
+# Parameters and Arguments
+
+Methods have something called Parametrs and Parameters take values called Arguments
+
+```python
+# Lets take a video game as an example
+# Think about the options and setting the game may have
+# Difficulty - Easy, Medium, Hard --- A setting
+# Volume - 1 through 10
+# Subtitles - True / False
+#
+# In programming, the option itself( Difficulty ) is the Parameter
+# The option that we select ( Easy ) from the choices is the Argument
+# Easy is the Argument that we are proving to the Difficulty Parameter
+# Parameter is the name of the option and the Argument is the choice that we choose for that option
+
